@@ -8,9 +8,11 @@ var btnGivenAmountCheck = document.querySelector(".btnGivenAmountCheck");
 var msgDisplay2 = document.querySelector("#msg2");
 var display2 = document.querySelector("#display2");
 var showNotes = document.querySelectorAll(".showNotes");
+var output = document.querySelector(".output")
 amountGiven.style.display = "none";
 btnGivenAmountCheck.style.display = "none";
 display2.style.display = "none";
+output.style.display ="none";
 var arrNote = [2000, 500, 100, 50, 20, 10, 5, 2, 1];
 //showNotes =[]
 const billCheckClickHandler = () => {
@@ -38,6 +40,7 @@ const givenCashHandler = () => {
     var amountToBeReturn = amountGiven.value - billAmount.value;
     returnCash(amountToBeReturn);
     msg = "cash notes";
+    output.style.display ="block";
   } else if (amountGiven.value === billAmount.value) {
     msg = "you donot need to return anything";
   } else {
