@@ -1,52 +1,56 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Cash Register Manager</title>
-    <meta charset="UTF-8" />
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-  <body>
-    <div id="app">
-      <h1>Cash Register Manager</h1>
-      <span>Enter Bill Amount</span>
-      <input class="billAmount" />
-      <button class="btnBillCheck">next</button>
-      <span id="msg1"></span>
-      <span id="display2">Enter Cash Given</span>
-      <input class="amountGiven" />
-      <button class="btnGivenAmountCheck">Check</button>
-      <span id="msg2"></span>
+<body>
+  <div id="container">
+    <h1>Cash Register Manager</h1>
+    <label><span>Enter Bill Amount</span></label>
+    
+    <label > <input class="billAmount"  /></label>
+    <label ><button class="btnBillCheck" >next</button></label> 
+    <label ><span id="msg1"></span></label>
+    <label ><span id="display2">Enter Cash Given</span></label>
+    <label><input  class="amountGiven" /></label>
+    <label > <button class="btnGivenAmountCheck">Check</button></label>
+    <label><span id="msg2"></span></label> 
+  
+  <div class="output">
+          <table>
+              <tr>
+                  <th>Note</td>
+                      <td>2000</td>
+                      <td>500</td>
+                      <td>100</td>
+                      <td>50</td>
+                      <td>20</td>
+                      <td>10</td>
+                      <td>5</td>
+                      <td>2</td>
+                      <td>1</td>
+              </tr>
+              <tr>
+                  <th>No.of Notes</td>
+                      <td class="showNotes"></td>
+                      <td class="showNotes"></td>
+                      <td class="showNotes"></td>
+                      <td class="showNotes"></td>
+                      <td class="showNotes"></td>
+                      <td class="showNotes"></td>
+                      <td class="showNotes"></td>
+                      <td class="showNotes"></td>
+                      <td class="showNotes"></td>
+              </tr>
+          </table>
+      </div>
     </div>
-    <div class="output">
-            <table>
-                <tr>
-                    <th>Note</td>
-                        <td>2000</td>
-                        <td>500</td>
-                        <td>100</td>
-                        <td>50</td>
-                        <td>20</td>
-                        <td>10</td>
-                        <td>5</td>
-                        <td>2</td>
-                        <td>1</td>
-                </tr>
-                <tr>
-                    <th>No.of Notes</td>
-                        <td class="showNotes"></td>
-                        <td class="showNotes"></td>
-                        <td class="showNotes"></td>
-                        <td class="showNotes"></td>
-                        <td class="showNotes"></td>
-                        <td class="showNotes"></td>
-                        <td class="showNotes"></td>
-                        <td class="showNotes"></td>
-                        <td class="showNotes"></td>
-                </tr>
-            </table>
-        </div>
-
-   
-  </body>
-  <script src="src/index.js"></script>
+ 
+</body>
+<script src="index.js"></script>
 </html>

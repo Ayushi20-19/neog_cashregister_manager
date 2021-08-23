@@ -1,0 +1,32 @@
+body {
+  font-family: sans-serif;
+}
+#container {
+  background-color: rgb(157, 232, 255);
+  position: relative;
+  width: 95%;
+  height: 90vh;
+  border: 1px solid;
+  margin: auto;
+  padding-top: 3rem;
+  top: 1rem;
+  text-align: center;
+}
+.output {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+}
+label {
+  display: block;
+  margin-top: 1rem;
+}
+button {
+  color: bisque;
+  background-color: black;
+}
+table,
+td {
+  border: 0.1px solid black;
+}
